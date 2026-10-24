@@ -1,16 +1,14 @@
 #ifndef BLACKJACK_H
 #define BLACKJACK_H
 
-/* Includes */
+
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
 
-/* Defines */
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
 
-/* Enums */
 typedef enum {
   SUIT_HEARTS,
   SUIT_DIAMONDS,
@@ -41,7 +39,6 @@ typedef enum {
   STATE_GAME_OVER
 } GameState;
 
-/* Structs */
 typedef struct {
   Suit suit;
   Rank rank;
@@ -58,7 +55,6 @@ typedef struct {
   int count;
 } Hand;
 
-/* Prototypes */
 void init_deck(Deck *deck);
 void shuffle_deck(Deck *deck);
 void deal_cards(Deck *deck, Hand *hand);
