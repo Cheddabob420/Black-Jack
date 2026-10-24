@@ -135,7 +135,6 @@ int main(int argc, char *argv[]) {
       state = STATE_GAME_OVER;
     }
 
-    // Render pass
     SDL_SetRenderDrawColor(renderer, 34, 139, 34, 255);
     SDL_RenderClear(renderer);
 
@@ -167,7 +166,6 @@ int main(int argc, char *argv[]) {
                   "ROUND OVER - Press [R] to Play Again, [ESC] to Quit", 100,
                   560, white);
 
-      // Draw banner overlay
       SDL_Rect banner_rect = {.x = 200, .y = 220, .w = 400, .h = 100};
       SDL_SetRenderDrawColor(renderer, 20, 20, 20, 255);
       SDL_RenderFillRect(renderer, &banner_rect);
